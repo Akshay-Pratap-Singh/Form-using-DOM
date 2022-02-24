@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(247, 245, 242);
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 18pt;
+        }
+        div{
+            margin-bottom: 20px;
+        }
+        table, tr, td{
+            height: 100%;
+            font-size: 14pt;
+            text-align: center;
+            table-layout: fixed;
+            border: 1px black solid;
+            border-collapse: collapse;
+        }
+        td{
+            width: 10%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+    <div style="display: inline-block;">
+
+        <div>
+            <label for="firstName">First Name</label><br>
+            <input type="text" id="firstName" placeholder="First Name" style="font-size: 14pt; height: 30px; width:280px;">
+        </div>
+        <div>
+            <label for="lastName">Last Name</label><br>
+            <input type="text" id="lastName" placeholder="Last Name" style="font-size: 14pt; height: 30px; width:280px; ">
+        </div>
+        <div>
+            <label for="address">Address</label><br>
+            <input type="text" id="address" placeholder="Address" style="font-size: 14pt; height: 30px; width:280px; ">
+        </div>
+        <div>
+            <label for="pinCode">Pin code</label><br>
+            <input type="text" id="pinCode" placeholder="Pin Code" style="font-size: 14pt; height: 30px; width:280px; ">
+        </div>
+        
+        <div>Gender:
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+        </div>
+        
+        <div id="spanFood">
+            Food: <br>
+            <input type="checkbox" name="food" value="North Indian" id="northIndian">
+            <label for="northIndian">North Indian</label><br>
+            <input type="checkbox" name="food" value="South Indian" id="southIndian">
+            <label for="southIndian">South Indian</label><br>
+            <input type="checkbox" name="food" value="Mid Indian" id="midIndian">
+            <label for="midIndian">Mid Indian</label><br>
+            <input type="checkbox" name="food" value="East Indian" id="eastIndian">
+            <label for="eastIndian">East Indian</label><br>
+            <input type="checkbox" name="food" value="West Indian" id="westIndian">
+            <label for="westIndian">West Indian</label><br>
+        </div>
+        
+        <div>
+            <label for="state">State</label><br>
+            <input type="text" id="state" placeholder="State" style="font-size: 14pt; height: 30px; width:280px;">
+        </div>
+        <div>
+            <label for="country">Country</label><br>
+            <input type="text" id="country" placeholder="Country" style="font-size: 14pt; height: 30px; width:280px;">
+            
+        </div>
+
+        <button onclick="submit()" style="width: 120px; height: 50px; font-size: 14pt;">Click me </button>
+        <script src="script.js"></script>
+        
+        </div>
+
+        <div style="display: inline-block; padding-bottom: 400px; margin-left: 30px;">
+            <table>
+                <thead>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>Address</td>
+                    <td>PinCode</td>
+                    <td>Gender</td>
+                    <td>Food</td>
+                    <td>State</td>
+                    <td>Country</td>  
+                </thead>
+                <tbody>
+                    <td id="row1"></td>
+                    <td id="row2"></td>
+                    <td id="row3"></td>
+                    <td id="row4"></td>
+                    <td id="row5"></td>
+                    <td id="row6"></td>
+                    <td id="row7"></td>
+                    <td id="row8"></td>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
